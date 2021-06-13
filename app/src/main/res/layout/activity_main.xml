@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.motion.widget.MotionLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/anim"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:orientation="horizontal"
+    app:layoutDescription="@xml/activity_main_scene"
+    tools:context=".MainActivity"
+    tools:visibility="visible">
+
+
+    <ImageView
+        android:id="@+id/view"
+        android:layout_width="94dp"
+        android:layout_height="96dp"
+        android:src="@drawable/ic_baseline_cloud_24"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.499"
+        tools:visibility="invisible" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:visibility="invisible" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/animationView"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:rotation="90"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view"
+        app:layout_constraintVertical_bias="1.0"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/jump"
+        tools:visibility="visible" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/animationView2"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:rotation="90"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/rocket"
+        tools:visibility="visible" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/cub"
+        android:layout_width="226dp"
+        android:layout_height="225dp"
+        android:rotation="90"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.876"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/phone"
+        tools:visibility="invisible" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/phone"
+        android:layout_width="226dp"
+        android:layout_height="225dp"
+        android:rotation="90"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.47"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/cub"
+        tools:visibility="invisible" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/hello"
+        android:layout_width="248dp"
+        android:layout_height="300dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/hello"
+        tools:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="300sp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/cherry_swash"
+        android:gravity="center"
+        android:text="Animation List"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/view"
+        app:layout_constraintEnd_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.307" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="300sp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:fontFamily="@font/bubbler_one"
+        android:gravity="center"
+        android:text="Created by: Kunniev Shamil"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="310dp"
+        android:layout_height="485dp"
+        android:fontFamily="@font/chivo_black"
+        android:gravity=""
+        android:shadowColor="@color/ggg2"
+        android:shadowDx="1"
+        android:shadowDy="1"
+        android:shadowRadius="2"
+        android:text="выдлавдылоадлыво алдывоадлвы оадлвыоад лвол оывдоа длвыодалр флодарлд ыфвралор длвфоралвыофра ловырало фриыловарфлвыора лодфвралдо рфлвоыарлд фвоыралодр лофврало рфдвлар влдфравлроа лдф"
+        android:textColor="@color/state5"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="167dp"
+        android:gravity="center"
+        android:text="Практическая часть дипломной работы"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="408dp"
+        android:layout_height="317dp"
+        android:gravity="center"
+        android:text="ЗАЧЕМ НУЖНА АНИМАЦИЯ В МОБИЛЬНОМ ПРИЛОЖЕНИИ? Анимация снижает когнитивную нагрузку Анимация упрощает навигацию Анимация препятствует возникновению “слепоты к изменениям”"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.148"
+        tools:visibility="invisible" />
+
+
+</androidx.constraintlayout.motion.widget.MotionLayout>
